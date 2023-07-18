@@ -3,18 +3,26 @@
 
 	const { trigger, menu, item, arrow } = createDropdownMenu();
 
-	export let items: string[];
+	export let items: {
+		label: string;
+		melted?: Record<string, unknown> & { action?: (node: HTMLElement) => void };
+	}[];
+
+	const noop = () => {
+		/* do nothing */
+	};
 </script>
 
 <button type="button" class="trigger" melt={$trigger} aria-label="Update dimensions"> Open </button>
 
 <div class="menu" melt={$menu}>
 	{#each items as it}
-		<slot name="item" item={it} melted={$item}>
-			<div class="item" melt={$item}>
-				{it}
-			</div>
-		</slot>
+		{@const meltedProps = it.melted ?? {}}
+		{@const meltedAction = it.melted?.action ?? noop}
+
+		<div class="item" melt={$item} {...meltedProps} use:meltedAction>
+			{it.label}
+		</div>
 	{/each}
 
 	<div melt={$arrow} />

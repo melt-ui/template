@@ -1,8 +1,8 @@
 <script lang="ts">
-	import type { createDialog } from '@melt-ui/svelte';
+	import type { CreateDialogReturn } from '@melt-ui/svelte';
 	import { fly } from 'svelte/transition';
 
-	export let props: Omit<ReturnType<typeof createDialog>, 'trigger'>;
+	export let props: Omit<CreateDialogReturn, 'trigger'>;
 
 	const { portal, overlay, content, title, description, close, open } = props;
 </script>

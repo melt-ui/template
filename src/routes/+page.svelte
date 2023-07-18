@@ -6,15 +6,12 @@
 	const { trigger, ...dialogProps } = createDialog();
 </script>
 
-<DropdownMenu items={['About Melt UI', 'Open Feedback Modal', 'Check for updates', 'Settings']}>
-	<svelte:fragment slot="item" let:item let:melted>
-		{#if item === 'Open Feedback Modal'}
-			<button class="item" melt={melted} {...trigger} use:trigger>Shenanigans</button>
-		{:else}
-			<span class="item" melt={melted}>
-				{item}
-			</span>
-		{/if}
-	</svelte:fragment>
-</DropdownMenu>
+<DropdownMenu
+	items={[
+		{ label: 'About Melt UI' },
+		{ label: 'Open Feedback Modal', melted: $trigger },
+		{ label: 'Check for updates' },
+		{ label: 'Settings' }
+	]}
+/>
 <Dialog props={dialogProps} />
