@@ -4,5 +4,9 @@
 @tailwind utilities;
 
 body {
-	@apply bg-neutral-900 text-white;
+	@apply bg-neutral-900 text-white outline-none !ring-0;
+}
+
+*:focus {
+	@apply ring ring-magnum-400 outline-none;
 }
