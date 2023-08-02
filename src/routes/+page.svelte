@@ -1,5 +1,5 @@
 <script>
-	import Accordion from '$lib/components/Accordion.svelte';
+	import Select from '$lib/components/Select.svelte';
 </script>
 
-<Accordion />
+<Select />
