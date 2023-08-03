@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@melt-ui/svelte':
-    specifier: ^0.30.1
-    version: 0.30.1(svelte@4.1.2)
+    specifier: ^0.31.3
+    version: 0.31.3(svelte@4.1.2)
   lucide-svelte:
     specifier: ^0.263.0
     version: 0.263.0(svelte@4.1.2)
@@ -15,7 +15,7 @@ dependencies:
 devDependencies:
   '@melt-ui/pp':
     specifier: ^0.1.0
-    version: 0.1.0(@melt-ui/svelte@0.30.1)(svelte@4.1.2)
+    version: 0.1.0(@melt-ui/svelte@0.31.3)(svelte@4.1.2)
   '@sveltejs/adapter-auto':
     specifier: ^2.1.0
     version: 2.1.0(@sveltejs/kit@1.22.4)
@@ -38,8 +38,8 @@ devDependencies:
     specifier: ^8.46.0
     version: 8.46.0
   eslint-config-prettier:
-    specifier: ^8.9.0
-    version: 8.9.0(eslint@8.46.0)
+    specifier: ^8.10.0
+    version: 8.10.0(eslint@8.46.0)
   eslint-plugin-svelte:
     specifier: ^2.32.4
     version: 2.32.4(eslint@8.46.0)(svelte@4.1.2)
@@ -50,11 +50,11 @@ devDependencies:
     specifier: ^4.0.1
     version: 4.0.1(postcss@8.4.27)
   prettier:
-    specifier: ^3.0.0
-    version: 3.0.0
+    specifier: ^3.0.1
+    version: 3.0.1
   prettier-plugin-svelte:
     specifier: ^3.0.3
-    version: 3.0.3(prettier@3.0.0)(svelte@4.1.2)
+    version: 3.0.3(prettier@3.0.1)(svelte@4.1.2)
   svelte:
     specifier: ^4.1.2
     version: 4.1.2
@@ -392,19 +392,19 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
 
-  /@melt-ui/pp@0.1.0(@melt-ui/svelte@0.30.1)(svelte@4.1.2):
+  /@melt-ui/pp@0.1.0(@melt-ui/svelte@0.31.3)(svelte@4.1.2):
     resolution: {integrity: sha512-GbzqhLDjfxh3BwC0It7kVUHvx05f+IdBad+mXWMO76xgfdqBkAO/pS6Q+tAEntKglQvxXugV3gHAyEJgSI0AlA==}
     engines: {pnpm: '>=8.6.3'}
     peerDependencies:
       '@melt-ui/svelte': '>= 0.29.0'
       svelte: ^3.55.0 || ^4.0.0
     dependencies:
-      '@melt-ui/svelte': 0.30.1(svelte@4.1.2)
+      '@melt-ui/svelte': 0.31.3(svelte@4.1.2)
       svelte: 4.1.2
     dev: true
 
-  /@melt-ui/svelte@0.30.1(svelte@4.1.2):
-    resolution: {integrity: sha512-8EA5mQXBQp11alHbZ76iCoZAiTkCrZHL0GKT3bDbYgw1h4vxnSqNTAwQXDhCq3Sy5q23y+67Z7FghgPgnBNwxQ==}
+  /@melt-ui/svelte@0.31.3(svelte@4.1.2):
+    resolution: {integrity: sha512-N5VPFUTeOygxZA3ObDWqIHwXTxlw4VTEUUT6ashiscfnG2ntbwmg4R+7ZdvWk6FfcilEUsRY1r6DyL+mBPEnSw==}
     peerDependencies:
       svelte: '>=3 <5'
     dependencies:
@@ -1001,8 +1001,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-prettier@8.9.0(eslint@8.46.0):
-    resolution: {integrity: sha512-+sbni7NfVXnOpnRadUA8S28AUlsZt9GjgFvABIRL9Hkn8KqNzOp+7Lw4QWtrwn20KzU3wqu1QoOj2m+7rKRqkA==}
+  /eslint-config-prettier@8.10.0(eslint@8.46.0):
+    resolution: {integrity: sha512-SM8AMJdeQqRYT9O9zguiruQZaN7+z+E4eAP9oiLNGKMtomwaB1E9dcgUD6ZAn/eQAb52USbvezbiljfZUhbJcg==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -1804,18 +1804,18 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-svelte@3.0.3(prettier@3.0.0)(svelte@4.1.2):
+  /prettier-plugin-svelte@3.0.3(prettier@3.0.1)(svelte@4.1.2):
     resolution: {integrity: sha512-dLhieh4obJEK1hnZ6koxF+tMUrZbV5YGvRpf2+OADyanjya5j0z1Llo8iGwiHmFWZVG/hLEw/AJD5chXd9r3XA==}
     peerDependencies:
       prettier: ^3.0.0
       svelte: ^3.2.0 || ^4.0.0-next.0
     dependencies:
-      prettier: 3.0.0
+      prettier: 3.0.1
       svelte: 4.1.2
     dev: true
 
-  /prettier@3.0.0:
-    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
+  /prettier@3.0.1:
+    resolution: {integrity: sha512-fcOWSnnpCrovBsmFZIGIy9UqK2FaI7Hqax+DIO0A9UxeVoY4iweyaFjS5TavZN97Hfehph0nhsZnjlVKzEQSrQ==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
