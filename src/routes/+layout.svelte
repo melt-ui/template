@@ -1,4 +1,5 @@
 <script>
+	import Toaster from '$lib/components/Toaster.svelte';
 	import '../app.postcss';
 </script>
 
@@ -8,3 +9,5 @@
 		<slot />
 	</div>
 </div>
+
+<Toaster />
