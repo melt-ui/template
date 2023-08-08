@@ -6,16 +6,16 @@ settings:
 
 dependencies:
   '@melt-ui/svelte':
-    specifier: ^0.31.3
-    version: 0.31.3(svelte@4.1.2)
+    specifier: ^0.34.0
+    version: 0.34.1(svelte@4.1.2)
   lucide-svelte:
     specifier: ^0.263.0
     version: 0.263.0(svelte@4.1.2)
 
 devDependencies:
   '@melt-ui/pp':
-    specifier: ^0.1.0
-    version: 0.1.0(@melt-ui/svelte@0.31.3)(svelte@4.1.2)
+    specifier: ^0.1.1
+    version: 0.1.1(@melt-ui/svelte@0.34.1)(svelte@4.1.2)
   '@sveltejs/adapter-auto':
     specifier: ^2.1.0
     version: 2.1.0(@sveltejs/kit@1.22.4)
@@ -64,6 +64,9 @@ devDependencies:
   svelte-sequential-preprocessor:
     specifier: ^2.0.1
     version: 2.0.1
+  sveltekit-superforms:
+    specifier: ^1.5.0
+    version: 1.5.0(@sveltejs/kit@1.22.4)(svelte@4.1.2)(zod@3.21.4)
   tailwindcss:
     specifier: ^3.3.3
     version: 3.3.3
@@ -76,6 +79,9 @@ devDependencies:
   vite:
     specifier: ^4.4.8
     version: 4.4.8
+  zod:
+    specifier: ^3.21.4
+    version: 3.21.4
 
 packages:
 
@@ -392,19 +398,19 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
 
-  /@melt-ui/pp@0.1.0(@melt-ui/svelte@0.31.3)(svelte@4.1.2):
-    resolution: {integrity: sha512-GbzqhLDjfxh3BwC0It7kVUHvx05f+IdBad+mXWMO76xgfdqBkAO/pS6Q+tAEntKglQvxXugV3gHAyEJgSI0AlA==}
+  /@melt-ui/pp@0.1.1(@melt-ui/svelte@0.34.1)(svelte@4.1.2):
+    resolution: {integrity: sha512-Ti5acxbF2gJuxia8W4rMocgBuxPKE5ntW7NeWvG2XeSR03AoFr1zUlC9RBJyjUpxzErhrmyeolIqc2Kxzo42BA==}
     engines: {pnpm: '>=8.6.3'}
     peerDependencies:
       '@melt-ui/svelte': '>= 0.29.0'
       svelte: ^3.55.0 || ^4.0.0
     dependencies:
-      '@melt-ui/svelte': 0.31.3(svelte@4.1.2)
+      '@melt-ui/svelte': 0.34.1(svelte@4.1.2)
       svelte: 4.1.2
     dev: true
 
-  /@melt-ui/svelte@0.31.3(svelte@4.1.2):
-    resolution: {integrity: sha512-N5VPFUTeOygxZA3ObDWqIHwXTxlw4VTEUUT6ashiscfnG2ntbwmg4R+7ZdvWk6FfcilEUsRY1r6DyL+mBPEnSw==}
+  /@melt-ui/svelte@0.34.1(svelte@4.1.2):
+    resolution: {integrity: sha512-snsvshJFF6iumZ9TaqerhaCYyekWnHSLknRR62ybp5ttCLhTFLhsYcZB7GucDyF7hzv99yLHqEo6U0feg0yXFA==}
     peerDependencies:
       svelte: '>=3 <5'
     dependencies:
@@ -2135,6 +2141,18 @@ packages:
       magic-string: 0.30.1
       periscopic: 3.1.0
 
+  /sveltekit-superforms@1.5.0(@sveltejs/kit@1.22.4)(svelte@4.1.2)(zod@3.21.4):
+    resolution: {integrity: sha512-c/2v6zN9rtIAsOfsd6rBV7Kf0lB2+/o6sAFaOuMrYPlTBro5lpbz3iN/3nM5D3EuLE2Xt/iDdZYpkQdH8rq4nQ==}
+    peerDependencies:
+      '@sveltejs/kit': 1.x
+      svelte: 3.x || 4.x
+      zod: 3.x
+    dependencies:
+      '@sveltejs/kit': 1.22.4(svelte@4.1.2)(vite@4.4.8)
+      svelte: 4.1.2
+      zod: 3.21.4
+    dev: true
+
   /tabbable@6.2.0:
     resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==}
 
@@ -2336,4 +2354,8 @@ packages:
   /yocto-queue@0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: true
+
+  /zod@3.21.4:
+    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
     dev: true
