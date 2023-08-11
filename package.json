@@ -12,7 +12,7 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@melt-ui/pp": "^0.1.1",
+		"@melt-ui/pp": "^0.1.2",
 		"@sveltejs/adapter-auto": "^2.1.0",
 		"@sveltejs/kit": "^1.22.4",
 		"@tailwindcss/typography": "^0.5.9",
@@ -36,7 +36,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@melt-ui/svelte": "^0.34.0",
+		"@melt-ui/svelte": "^0.34.3",
 		"lucide-svelte": "^0.263.0"
 	}
 }
