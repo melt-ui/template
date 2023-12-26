@@ -7,7 +7,7 @@ import sequence from 'svelte-sequential-preprocessor';
 const config = {
 	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
-	preprocess: [sequence([vitePreprocess(), preprocessMeltUI()]), vitePreprocess({})],
+	preprocess: [sequence([vitePreprocess(), preprocessMeltUI()])],
 
 	kit: {
 		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
